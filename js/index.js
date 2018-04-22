@@ -31,9 +31,13 @@ const createLine = (syllableLength) => {
   return line.join(' ');
 };
 
-const hashtags = '#javascript #haiku #poetry';
-const line1 = createLine(5);
-const line2 = createLine(7);
-const line3 = createLine(5);
-const haiku = `${line1}\n${line2}\n${line3}\n\n${hashtags}`;
+const constructHaiku = () => {
+  const hashtags = '#javascript #haiku #poetry #俳句';
+  const line1 = createLine(5);
+  const line2 = createLine(7);
+  const line3 = createLine(5);
+  return `${line1}\n${line2}\n${line3}\n\n${hashtags}`;
+};
+
+const haiku = constructHaiku();
 postTweet(haiku);
