@@ -13,7 +13,7 @@ const postTweet = (tweet) => {
   client.post('statuses/update', { status: tweet })
     .then((successfulTweet) => {
       // eslint-disable-next-line no-console
-      console.log('tweet successful: /n', successfulTweet.text);
+      console.log('tweet successful:', successfulTweet.text);
     })
     .catch((error) => {
       throw error;
