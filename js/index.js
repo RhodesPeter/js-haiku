@@ -1,9 +1,8 @@
-const fs = require('fs');
 const syllable = require('syllable');
 const postTweet = require('./twitter');
 
-const dictString = fs.readFileSync('/usr/share/dict/words', 'utf8');
-const dict = dictString.split('\n');
+const dictString = require('./dictionary');
+const dict = dictString.split(' ');
 const dictLength = dict.length;
 
 const chooseRandomWord = () => {
