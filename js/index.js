@@ -1,7 +1,7 @@
 const syllable = require('syllable');
 const postTweet = require('./twitter');
-
 const dictString = require('./dictionary');
+
 const dict = dictString.split(' ');
 const dictLength = dict.length;
 
