@@ -1,3 +1,7 @@
+#### Currently tweeking Haiku via AWS lambda at [@JsHaiku](https://twitter.com/JsHaiku).
+
+--
+
 #### To create a tweet:  
 `node js/index.js`
 
